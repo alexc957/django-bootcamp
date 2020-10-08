@@ -20,6 +20,7 @@ urlpatterns = [
     path('search/', views.home_view),
 #    path('products/1/',views.product_detail_view),
     path('products/<int:pk>/',views.product_detail_view),
+     path('products/',views.product_list_view),
     path('api/products/<int:pk>/',views.product_api_detail_view),
     path('admin/', admin.site.urls),
 ]
